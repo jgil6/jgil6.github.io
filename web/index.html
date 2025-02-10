@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="icon" type="image/png" href="">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Mi Página Web</title>
+  <style>
+    body {
+      background-color: orange;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #16213e;
+      padding: 15px;
+      border-bottom: 3px solid #e94560;
+    }
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .navbar-item a {
+      color: #0f3460;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .navbar-item a:hover {
+      background-color: #e94560;
+      color: white;
+      border-radius: 5px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: orange;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 60px;
+      padding: 30px;
+      background: #0f3460;
+      border-radius: 10px;
+    }
+    .image-gallery img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      border: 3px solid #e94560;
+    }
+    #inicios {
+      padding: 40px;
+      background: #0f3460;
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 60px;
+    }
+    .content-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .text-content {
+      flex: 1;
+    }
+    .image-content img {
+      width: 350px;
+      height: auto;
+      border-radius: 10px;
+      border: 3px solid #e94560;
+    }
+    @media (max-width: 768px) {
+      .content-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .image-content img {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+    #contacto {
+      background: #a8d0e6;
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+      color: #000;
+    }
+    #contacto h1,
+    #contacto h2 {
+      color: #000;
+    }
+    #contacto form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    #contacto label {
+      font-weight: bold;
+      text-align: left;
+    }
+    #contacto input,
+    #contacto textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    #contacto textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      text-align: left;
+    }
+    #contacto button {
+      background: #2b6777;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #contacto button:hover {
+      background: #1c4e5f;
+    }
+    #contacto a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #1E1D1D;
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .footer-section {
+      flex: 1;
+      padding: 0 20px;
+      min-width: 200px;
+    }
+    .footer-section h3 {
+      color: #e94560;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li {
+      margin: 5px 0;
+    }
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+    }
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+    }
+    .copyright {
+      width: 100%;
+      text-align: center;
+      background-color: orange;
+      padding: 10px;
+      font-size: 14px;
+      color: black;
+      border-top: 3px solid #e94560;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="header">
+        <a id="logo" href="#">
+          <img src="https://th.bing.com/th/id/R.7658fddaecdd838a859c4730d1f784ed?rik=V2lN0YEZn5mmtw&riu=http%3a%2f%2fd500.epimg.net%2fcincodias%2fimagenes%2f2015%2f05%2f08%2fpyme%2f1431098283_691735_1431098420_noticia_normal.jpg&ehk=a9Nt9PpYBtuJRpsw2A%2fa3C%2fENZsBUy2wWadihuxan08%3d&risl=&pid=ImgRaw&r=0" alt="Logo" width="350" height="200" class="header-logo">
+        </a>
+        <nav>
+          <ul id="navbar">
+            <li class="navbar-item"><a href="#inicio">Inicio</a></li>
+            <li class="navbar-item"><a href="#acerca">Acerca de mí</a></li>
+            <li class="navbar-item"><a href="#quien-soy">Quién soy</a></li>
+            <li class="navbar-item"><a href="#galeria">Galería</a></li>
+            <li class="navbar-item"><a href="#contacto">Contacto</a></li>
+            <li class="navbar-item"><a href="#oficina">Oficina</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="inicio">
+      <h1>Bienvenido a mi página web</h1>
+      <p>Explora las diferentes secciones para conocer más sobre mí. Aquí encontrarás información sobre mis proyectos, mi experiencia y mi visión sobre la tecnología.</p>
+      <p>Desde siempre he tenido una gran pasión por la innovación y el desarrollo digital. A lo largo de los años, he trabajado en diversos proyectos que me han permitido mejorar mis habilidades y aprender nuevas tendencias en el mundo tecnológico.</p>
+      <p>Mi objetivo es seguir creciendo en este campo, aportando soluciones creativas y eficientes. Me encanta compartir conocimientos y colaborar con otros profesionales para desarrollar ideas innovadoras que marquen la diferencia.</p>
+      <img src="https://pa1.aminoapps.com/6661/9838d313f21c1eb36f57d2b9e2c7a0279d525aa1_hq.gif" alt="Trabajo de desarrollo web" width="100%" height="200">
+    </section>
+    <section id="acerca">
+      <h1>Acerca de mí</h1>
+      <p>Somos una empresa apasionada por la tecnología y el diseño web. Nos dedicamos a crear experiencias digitales interactivas que facilitan la vida de los usuarios.</p>
+      <p>Desde nuestros inicios en el mundo del desarrollo, siempre hemos buscado formas de mejorar la accesibilidad y usabilidad de las plataformas digitales. Creemos que un buen diseño no solo debe ser atractivo, sino también funcional y fácil de usar.</p>
+      <p>Nos motiva la idea de aprender nuevas tecnologías y tendencias en el diseño web. Cada proyecto es una oportunidad para innovar y ofrecer soluciones que realmente marquen la diferencia en la experiencia del usuario.</p>
+      <img src="https://www.salesforce.com/mx/blog/wp-content/uploads/sites/11/2023/09/relacion-con-el-cliente.jpg" alt="Trabajo de desarrollo web" width="70%" height="250">
+    </section>
+    <section id="quien-soy">
+      <h1>Quién somos</h1>
+      <div class="content-container">
+        <div class="text-content">
+          <p>Somos una empresa de tecnología innovadora, especializada en el desarrollo de soluciones digitales avanzadas para empresas y consumidores. Nuestro equipo de expertos en software, inteligencia artificial y transformación digital trabaja para crear productos y servicios que optimizan procesos, aumentan la eficiencia y mejoran la experiencia del usuario. Creemos en el poder de la tecnología para transformar negocios y simplificar la vida de las personas, ofreciendo soluciones a medida que se adaptan a las necesidades del mercado actual.</p>
+          <p>Nuestra misión es impulsar el crecimiento de las empresas a través de la innovación, brindando herramientas tecnológicas que potencien su competitividad y sostenibilidad. Desde el desarrollo de aplicaciones hasta la implementación de inteligencia artificial y automatización, nos comprometemos a ofrecer tecnología de vanguardia con un enfoque centrado en el cliente. Con una visión global y un espíritu de excelencia, seguimos evolucionando para liderar el futuro digital.</p>
+        </div>
+        <div class="image-content">
+          <img src="https://th.bing.com/th/id/OIP.2bdikWzSzW_JIyaN10GHyAHaDQ?w=313&h=153&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Nuestros inicios">
+        </div>
+      </div>
+    </section>
+    <section id="galeria">
+      <h1>Galería</h1>
+      <p>Aquí puedes ver algunos de los proyectos en los que he trabajado. Desde sitios web empresariales hasta aplicaciones interactivas, junto a fotos de nuestros trabajadores y de algunos de nuestros trabajos.</p>
+      <div class="image-gallery">
+        <img src="https://www.novvamarketing.com/wp-content/uploads/2016/11/diseno-web.jpg" alt="Diseño web" width="25%" height="150">
+        <img src="https://finofilipino.org/wp-content/uploads/2024/03/sergedtyjrytuk.jpg" alt="Proyecto en desarrollo" width="25%" height="150">
+        <img src="https://st.depositphotos.com/1000128/1893/i/450/depositphotos_18935279-stock-photo-growing-bar-chart-with-arrow.jpg" alt="Crecimiento empresarial" width="25%" height="150">
+        <img src="https://s03.s3c.es/imag/_v0/770x420/c/7/1/mal-jefe-dresmtime.jpg" alt="Ambiente laboral" width="25%" height="150">
+      </div>
+    </section>
+    <section id="inicios">
+      <h1>Inicios</h1>
+      <div class="content-container">
+        <div class="text-content">
+          <p>Nuestra historia comenzó con la pasión por la tecnología y el deseo de crear soluciones innovadoras. Desde los primeros días, nos hemos enfocado en el desarrollo de plataformas interactivas y la optimización digital.</p>
+          <p>Con el paso del tiempo, hemos crecido gracias a la dedicación y al esfuerzo de un equipo comprometido con la excelencia. Hoy, seguimos explorando nuevas formas de mejorar la experiencia de los usuarios en el mundo digital.</p>
+        </div>
+        <div class="image-content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFV8oxNAqEUgT5-NN_551ezas37ziTcNGLfw&s" alt="Nuestros inicios">
+        </div>
+      </div>
+    </section>
+    <section id="oficina">
+      <h1>Oficina</h1>
+      <p>Aquí se pueden ver algunas fotos de nuestras modernas oficinas y de nuestros empleados, quienes forman un equipo único y excepcional, siempre listos para ayudarte en lo que necesites.</p>
+      <div class="image-gallery">
+        <img src="https://simpsonitos.wordpress.com/wp-content/uploads/2012/01/grimes2.jpg" alt="Oficina 1" width="300" height="250">
+        <img src="https://th.bing.com/th/id/OIP.VLuMaEypyoW0OvdkzYSYAwHaFA?rs=1&pid=ImgDetMain" alt="Oficina 2" width="300" height="250">
+        <img src="https://www.randstad.es/wp-content/uploads/2023/12/valores_que_los_trabajadores_buscan_880_x_450_px.webp" alt="Oficina 3" width="300" height="250">
+        <img src="https://i.gifer.com/61Qx.gif" alt="Oficina 4" width="300" height="250">
+      </div>
+    </section>
+    <section id="contacto">
+      <h1>Contacto</h1>
+      <p>Puedes contactarme a través del siguiente formulario o enviarme un correo electrónico a <strong>contacto@miweb.com</strong>. También puedes seguirme en mis redes sociales para estar al tanto de mis últimos proyectos.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula ex lacus, id cursus ante tristique sit amet. Fusce eu elit eu libero suscipit placerat vel nec neque. Maecenas vitae auctor neque, eget bibendum lorem. Morbi varius odio at nisl fringilla, eget molestie libero efficitur. Quisque ut ullamcorper leo. Fusce euismod et nunc quis sodales. Vivamus eget erat at lectus vehicula pretium. Proin euismod, tellus a blandit hendrerit, orci eros ultricies libero, id interdum mauris mi quis lacus. Ut eget maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+      </p>
+      <p>
+        Mauris sagittis magna vel ipsum congue, vehicula imperdiet felis dignissim. Mauris rutrum maximus gravida. Etiam pharetra odio at tempor mattis. Vivamus egestas dui ac sapien mollis tempor. Sed lorem urna, porttitor vitae justo quis, lobortis rutrum arcu. Nulla non eros condimentum quam consectetur scelerisque. Etiam placerat enim varius velit dictum, id faucibus mauris consectetur. Phasellus ultrices quam eget purus mollis malesuada. Sed vel purus vehicula, bibendum dolor vel, volutpat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+      </p>
+      <h2>Contáctanos hoy</h2>
+      <form action="#" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="¿Cuál es tu correo electrónico?" required>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+        <div class="checkbox-container">
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <label for="privacidad">
+            Autorizo el uso de los datos personales facilitados con el fin de responder a la solicitud según lo descrito en 
+            <a href="#">Política de privacidad</a>.
+          </label>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-section">
+      <h3>Menú</h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca</a></li>
+        <li><a href="#quien-soy">Quién soy</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#oficina">Oficina</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>Email: jgil@milaifontanals.org</p>
+      <p>Teléfono: 123 456 789</p>
+    </div>
+    <div class="footer-section">
+      <h3>Redes Sociales</h3>
+      <div class="social-icons">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 PAGINA WEB JGIL
+    </div>
+  </footer>
+</body>
+</html>
